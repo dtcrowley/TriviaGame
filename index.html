@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Trivia Game</title>
 </head>
 
@@ -14,51 +15,123 @@
         <h1 class="display-4 text-center">Trivia Game</h1>
         <p class="lead text-center">Below are a series of questions. You will have 2 minutes to answer all of the questions shown. Once the timer expires, the game will end.</p>
         <hr class="my-4">
-        <p class="text-center">To select your answer, just click the button containing your answer. You can only select 1 answer per question.</p>
+        <p class="text-center font-weight-heavy">To select your answer, just click the button containing your answer. You can only select 1 answer per question.</p>
     </div>
-
+<!--Timer goes here-->
     <div class="card">
-        <div class="card-body text-center font-weight-heavy">
-           <h2>Time left:</h2> 
+        <div class="card-body text-center font-weight-heavier p-4" id="show-number">
+           <h2></h2> 
         </div>
     </div>
+<!-- Keying HTML directly to save time -->
+    <div class="question">
+        <h3>Question 1: What is the capital of North Carolina?</h3>
+        <input type="radio" id="choice1" name="answer">
+        <label for="option1">Raleigh</label>
 
-    <div class="question1">
-        <h3>Question 1: </h3>
-        <button>Option A: </button>
-        <button>Option B: </button>
-        <button>Option C: </button>
+        <input type="radio" id="choice2" name="answer"> 
+        <label for="option2">Charlotte</label>
+
+        <input type="radio" id="choice3" name="answer"> 
+        <label for="option3">Asheville</label>
     </div>
-    <div class="question2">
-        <h3>Question 2: </h3>
-        <button>Option A: </button>
-        <button>Option B: </button>
-        <button>Option C: </button>
+    <br>
+    <div class="question">
+        <h3>Question 2: The Tar Heels are the mascot for which university?</h3>
+        <input type="radio" id="choice1" name="answer"> 
+        <label for="option1">Dook</label>
+
+        <input type="radio" id="choice2" name="answer"> 
+        <label for="option2">UNC Chapel Hill</label>
+
+        <input type="radio" id="choice3" name="answer"> 
+        <label for="option3">NC State</label>
     </div>
-    <div class="question3">
-        <h3>Question 3: </h3>
-        <button>Option A: </button>
-        <button>Option B: </button>
-        <button>Option C: </button>
+    <br>
+    <div class="question">
+        <h3>Question 3: Who was the 1st US President?</h3>
+        <input type="radio" id="choice1" name="answer"> 
+        <label for="option1">Benjamin Franklin</label>
+
+        <input type="radio" id="choice2" name="answer"> 
+        <label for="option2">Abraham Lincoln</label>
+
+        <input type="radio" id="choice3" name="answer"> 
+        <label for="option3">George Washington</label>
     </div>
-    <div class="question4">
-        <h3>Question 4: </h3>
-        <button>Option A: </button>
-        <button>Option B: </button>
-        <button>Option C: </button>
+    <br>
+    <div class="question">
+        <h3>Question 4: Which of these is a US car brand?</h3>
+        <input type="radio" id="choice1" name="answer"> 
+        <label for="option1">Ford</label>
+
+        <input type="radio" id="choice2" name="answer"> 
+        <label for="option2">BMW</label>
+
+        <input type="radio" id="choice3" name="answer"> 
+        <label for="option3">Honda</label>
     </div>
-<div class="question5">
-        <h3>Question 5: </h3>
-        <button>Option A: </button>
-        <button>Option B: </button>
-        <button>Option C: </button>
+    <br>
+    <div class="question">
+        <h3>Question 5: What is the largest state in the US?</h3>
+        <input type="radio" id="choice1" name="answer"> 
+        <label for="option1">Texas</label>
+
+        <input type="radio" id="choice2" name="answer"> 
+        <label for="option2">California</label>
+
+        <input type="radio" id="choice3" name="answer"> 
+        <label for="option3">Alaska</label>
     </div>
-    <div class="question6">
-        <h3>Question 6: </h3>
-        <button>Option A: </button>
-        <button>Option B: </button>
-        <button>Option C: </button>
+    <br>
+    <div class="question">
+        <h3>Question 6: Which of these is spelled correctly?</h3>
+        <input type="radio" id="choice1" name="answer"> 
+        <label for="option1">Rithm</label>
+
+        <input type="radio" id="choice2" name="answer"> 
+        <label for="option2">Rhythm</label>
+
+        <input type="radio" id="choice3" name="answer"> 
+        <label for="option3">Rythm</label>
     </div>
-    
+    <br>
+    <div class="question">
+        <h3>Question 7: Who is the current governor of North Carolina?</h3>
+        <input type="radio" id="choice1" name="answer"> 
+        <label for="option1">Pat McCrory</label>
+
+        <input type="radio" id="choice2" name="answer"> 
+        <label for="option2">Jim Hunt</label>
+
+        <input type="radio" id="choice3" name="answer"> 
+        <label for="option3">Roy Cooper</label>
+    </div>
+    <br>
+    <div class="question">
+        <h3>Question 8: Which of these is spelled correctly?</h3>
+        <input type="radio" id="choice1" name="answer"> 
+        <label for="option1">Rithm</label>
+
+        <input type="radio" id="choice2" name="answer"> 
+        <label for="option2">Rhythm</label>
+
+        <input type="radio" id="choice3" name="answer"> 
+        <label for="option3">Rythm</label>
+    </div>
+    <br>
+    <div class="question">
+        <h3>Question 9: Which of these is spelled correctly?</h3>
+        <input type="radio" id="choice1" name="answer"> 
+        <label for="option1">Rithm</label>
+
+        <input type="radio" id="choice2" name="answer"> 
+        <label for="option2">Rhythm</label>
+
+        <input type="radio" id="choice3" name="answer"> 
+        <label for="option3">Rythm</label>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
 </html>

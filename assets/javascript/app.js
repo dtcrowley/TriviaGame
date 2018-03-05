@@ -18,8 +18,8 @@ if (number === 0) {
 
     stop();
 
-    alert("Time Up!");
-}
+    $("#show-number").html("<h2>" + "Time's Up!" + "</h2>");
+    }
 }
 
 function stop() {
